@@ -1,3 +1,7 @@
+
+![image](https://github.com/a2rp/avataar-generator/assets/5670738/8a9dae04-3179-4600-8db3-1dea8e61b1ac)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
