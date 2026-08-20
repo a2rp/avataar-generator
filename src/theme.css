@@ -1,0 +1,91 @@
+:root {
+    --background-color: #070708;
+
+    --surface-color: #101012;
+    --surface-soft-color: #151518;
+    --surface-strong-color: #1d1d21;
+
+    --text-color: #f5f5f5;
+    --text-soft-color: #d5d5d8;
+    --text-muted-color: #8c8c94;
+
+    --border-color: #26262b;
+    --border-strong-color: #414149;
+
+    --primary-color: #ffffff;
+    --primary-hover-color: #e7e7e7;
+    --primary-text-color: #080808;
+
+    --success-color: #36c973;
+    --success-soft-color: rgba(54, 201, 115, 0.12);
+
+    --danger-color: #ef5350;
+    --danger-soft-color: rgba(239, 83, 80, 0.12);
+
+    --warning-color: #e7ad2f;
+    --warning-soft-color: rgba(231, 173, 47, 0.12);
+
+    --info-color: #42a5f5;
+    --info-soft-color: rgba(66, 165, 245, 0.12);
+
+    --focus-color: #8c8c94;
+    --focus-soft-color: rgba(255, 255, 255, 0.07);
+
+    --shadow-color: rgba(0, 0, 0, 0.36);
+
+    --scrollbar-track-color: #0b0b0d;
+
+    --scrollbar-thumb-color: #303036;
+
+    --scrollbar-thumb-hover-color: #484851;
+
+    color-scheme: dark;
+}
+
+[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+[data-theme="light"] {
+    --background-color: #f5f5f6;
+
+    --surface-color: #ffffff;
+    --surface-soft-color: #f0f0f2;
+    --surface-strong-color: #e7e7ea;
+
+    --text-color: #121214;
+    --text-soft-color: #35353a;
+    --text-muted-color: #73737c;
+
+    --border-color: #dedee3;
+    --border-strong-color: #bdbdc6;
+
+    --primary-color: #101012;
+    --primary-hover-color: #27272b;
+    --primary-text-color: #ffffff;
+
+    --success-color: #178c4d;
+    --success-soft-color: rgba(23, 140, 77, 0.1);
+
+    --danger-color: #c83b39;
+    --danger-soft-color: rgba(200, 59, 57, 0.1);
+
+    --warning-color: #a97612;
+    --warning-soft-color: rgba(169, 118, 18, 0.1);
+
+    --info-color: #2478bb;
+    --info-soft-color: rgba(36, 120, 187, 0.1);
+
+    --focus-color: #66666e;
+    --focus-soft-color: rgba(0, 0, 0, 0.06);
+
+    --shadow-color: rgba(0, 0, 0, 0.1);
+
+    --scrollbar-track-color: #ededf0;
+
+    --scrollbar-thumb-color: #c5c5cb;
+
+    --scrollbar-thumb-hover-color: #aaaab2;
+
+    color-scheme: light;
+}

@@ -1,74 +1,202 @@
+# Avataar Generator
 
-![image](https://github.com/a2rp/avataar-generator/assets/5670738/8a9dae04-3179-4600-8db3-1dea8e61b1ac)
+A modern and interactive avatar generator built with React and DiceBear.
 
+Create unique avatars, explore multiple avatar styles, browse generated variants, customize appearance, save favorites, and export avatars in multiple formats.
 
-# Getting Started with Create React App
+![Avataar Generator Preview](screenshot.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Features
 
-## Available Scripts
+- 31 DiceBear avatar styles
+- Live avatar preview
+- Style search
+- Previous and next avatar variant navigation
+- Variant history preserved while browsing
+- Custom avatar seed support
+- Scale adjustment
+- Rotation adjustment
+- Border radius adjustment
+- Margin adjustment
+- Horizontal flip
+- Transparent background support
+- Custom background color
+- Save and manage favorite avatars
+- Restore saved favorites
+- Confirmation dialogs for destructive actions
+- Light and dark themes
+- Responsive interface
+- Copy avatar configuration
+- Copy SVG
+- Generate Data URI
+- Download PNG
+- Download SVG
+- Lazy-loaded DiceBear styles
+- Loading indicators while avatar styles are loaded
 
-In the project directory, you can run:
+## Performance
 
-### `npm start`
+DiceBear avatar styles are loaded dynamically instead of including every style in the initial application bundle.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This keeps the initial JavaScript bundle smaller while allowing all supported avatar styles to remain available on demand.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- React
+- Vite
+- JavaScript
+- styled-components
+- DiceBear
+- React Icons
+- ESLint
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Clone the repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/a2rp/avataar-generator.git
+cd avataar-generator
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Install dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+```
 
-### `npm run eject`
+### Start the development server
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm run dev
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Create a production build
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run build
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Preview the production build
 
-## Learn More
+```bash
+npm run preview
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Run ESLint
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run lint
+```
 
-### Code Splitting
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```text
+avataar-generator/
+├── public/
+│   ├── favicon.ico
+│   ├── preview.png
+│   └── robots.txt
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── hooks/
+│   ├── utils/
+│   ├── App.jsx
+│   ├── App.styled.js
+│   ├── index.css
+│   ├── main.jsx
+│   └── theme.css
+├── eslint.config.js
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
 
-### Analyzing the Bundle Size
+## Avatar Styles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The application provides 31 DiceBear styles:
 
-### Making a Progressive Web App
+- Adventurer
+- Adventurer Neutral
+- Avataaars
+- Avataaars Neutral
+- Big Ears
+- Big Ears Neutral
+- Big Smile
+- Bottts
+- Bottts Neutral
+- Croodles
+- Croodles Neutral
+- Dylan
+- Fun Emoji
+- Glass
+- Icons
+- Identicon
+- Initials
+- Lorelei
+- Lorelei Neutral
+- Micah
+- Miniavs
+- Notionists
+- Notionists Neutral
+- Open Peeps
+- Personas
+- Pixel Art
+- Pixel Art Neutral
+- Rings
+- Shapes
+- Thumbs
+- Toon Head
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Avatar Export
 
-### Advanced Configuration
+Generated avatars can be used outside the application through several export options:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- PNG download
+- SVG download
+- SVG copy
+- Data URI generation
+- Configuration copy
 
-### Deployment
+## Favorites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Avatars can be saved to Favorites for later access.
 
-### `npm run build` fails to minify
+Saved favorites are stored locally in the browser, allowing them to remain available across page reloads on the same browser and device.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Variant Navigation
+
+Each avatar style can generate many different results.
+
+Use the **Prev** and **Next** controls to browse generated variants. Previously generated variants are retained in the current browsing history, allowing backward and forward navigation without requiring a fixed total number of variants.
+
+## Author
+
+**Ashish Ranjan**  
+Full-Stack Web Developer
+
+## Links
+
+- Portfolio: https://www.ashishranjan.net
+- GitHub: https://github.com/a2rp
+- CodePen: https://codepen.io/ash1198
+- LinkedIn: https://www.linkedin.com/in/aashishranjan
+- Facebook: https://www.facebook.com/theash.ashish/
+- YouTube: https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1
+- Email: mailto:a2rp.com@gmail.com
+
+## Support
+
+If you find my projects useful and would like to support my work:
+
+- Support Page: https://a2rp-donation-page.netlify.app/
+- Buy Me a Coffee: https://www.buymeacoffee.com/a2rp
+- Patreon: https://www.patreon.com/a2rp
+
+## License
+
+This project is licensed under the MIT License.
+
+See the [LICENSE](./LICENSE) file for details.
