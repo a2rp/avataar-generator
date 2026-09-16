@@ -185,7 +185,7 @@ Full-Stack Web Developer
 - LinkedIn: https://www.linkedin.com/in/aashishranjan
 - Facebook: https://www.facebook.com/theash.ashish/
 - YouTube: https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1
-- Email: mailto:a2rp.com@gmail.com
+- Email: mailto:ash.ranjan09@gmail.com
 
 ## Support
 

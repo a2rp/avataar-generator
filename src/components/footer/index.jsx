@@ -30,7 +30,7 @@ const Footer = () => {
                     <a
                         href="https://www.ashishranjan.net"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         <FiGlobe />
                         Portfolio
@@ -39,7 +39,7 @@ const Footer = () => {
                     <a
                         href="https://github.com/a2rp"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         <FiGithub />
                         GitHub
@@ -48,7 +48,7 @@ const Footer = () => {
                     <a
                         href="https://codepen.io/ash1198"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         <FiCode />
                         CodePen
@@ -57,7 +57,7 @@ const Footer = () => {
                     <a
                         href="https://www.linkedin.com/in/aashishranjan"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         <FiLinkedin />
                         LinkedIn
@@ -66,7 +66,7 @@ const Footer = () => {
                     <a
                         href="https://www.facebook.com/theash.ashish/"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         <FiFacebook />
                         Facebook
@@ -75,7 +75,7 @@ const Footer = () => {
                     <a
                         href="https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         <FiYoutube />
                         YouTube
@@ -91,7 +91,7 @@ const Footer = () => {
                     <a
                         href="https://a2rp-donation-page.netlify.app/"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         <FiHeart />
                         Support
@@ -100,7 +100,7 @@ const Footer = () => {
                     <a
                         href="https://buymeacoffee.com/a2rp"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         <FiCoffee />
                         Buy Me A Coffee
@@ -109,7 +109,7 @@ const Footer = () => {
                     <a
                         href="https://patreon.com/a2rp"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         Patreon
                     </a>
@@ -117,14 +117,14 @@ const Footer = () => {
             </div>
 
             <div className="bottom">
-                <span>© 2026 Avataar Generator. All rights reserved.</span>
+                <span>Copyright &copy; {new Date().getFullYear()} Avataar Generator.</span>
 
                 <span>
                     Developed by{" "}
                     <a
                         href="https://www.ashishranjan.net"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         Ashish Ranjan
                     </a>
