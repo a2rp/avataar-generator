@@ -12,6 +12,8 @@ export const Styled = {
             width: min(1460px, calc(100% - 32px));
 
             margin: 0 auto;
+
+            padding-top: 92px;
         }
 
         .label {
@@ -228,11 +230,8 @@ export const Styled = {
             }
 
             &:hover {
-                transform: translateY(-1px);
-
-                border-color: var(--border-strong-color);
-
-                color: var(--text-color);
+                box-shadow: 0 8px 22px var(--shadow-color);
+                text-shadow: 0 0 12px var(--text-soft-color);
             }
 
             &.active {

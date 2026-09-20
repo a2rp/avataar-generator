@@ -2,11 +2,19 @@ import styled from "styled-components";
 
 export const Styled = {
     Wrapper: styled.header`
-        position: sticky;
+        position: fixed;
         top: 0;
         z-index: 100;
 
         width: 100%;
+
+        transform: translateY(0);
+
+        transition: transform 220ms ease;
+
+        &.hidden {
+            transform: translateY(-100%);
+        }
 
         border-bottom: 1px solid var(--border-color);
 
@@ -101,7 +109,8 @@ export const Styled = {
         }
 
         .actionButton,
-        .iconButton {
+        .iconButton,
+        .menuButton {
             min-height: 38px;
 
             border: 1px solid var(--border-color);
@@ -113,10 +122,8 @@ export const Styled = {
             cursor: pointer;
 
             transition:
-                background 160ms ease,
-                border-color 160ms ease,
-                color 160ms ease,
-                transform 160ms ease;
+                box-shadow 160ms ease,
+                text-shadow 160ms ease;
         }
 
         .actionButton {
@@ -136,7 +143,8 @@ export const Styled = {
             }
         }
 
-        .iconButton {
+        .iconButton,
+        .menuButton {
             width: 38px;
 
             display: grid;
@@ -149,19 +157,18 @@ export const Styled = {
         }
 
         .actionButton:hover,
-        .iconButton:hover {
-            border-color: var(--border-strong-color);
-
-            background: var(--surface-strong-color);
-
-            color: var(--text-color);
-
-            transform: translateY(-1px);
+        .iconButton:hover,
+        .menuButton:hover {
+            box-shadow: 0 8px 22px var(--shadow-color);
+            text-shadow: 0 0 12px var(--text-soft-color);
         }
 
-        .actionButton:active,
-        .iconButton:active {
-            transform: translateY(0);
+        .menuButton {
+            display: none;
+        }
+
+        .mobileMenu {
+            display: none;
         }
 
         @media (max-width: 720px) {
@@ -175,13 +182,63 @@ export const Styled = {
                 display: none;
             }
 
-            .actionButton span {
+            .desktopAction {
                 display: none;
             }
 
-            .actionButton {
-                width: 38px;
-                padding: 0;
+            .menuButton {
+                display: grid;
+            }
+
+            .mobileMenu {
+                width: min(100% - 24px, 1400px);
+
+                margin: 0 auto;
+                padding: 8px 0 14px;
+
+                grid-template-columns: 1fr;
+                gap: 6px;
+
+                &.open {
+                    display: grid;
+                }
+
+                a,
+                button {
+                    min-height: 40px;
+
+                    padding: 8px 10px;
+
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    border: 1px solid var(--border-color);
+                    border-radius: 9px;
+
+                    background: var(--surface-soft-color);
+                    color: var(--text-soft-color);
+
+                    font-size: 0.66rem;
+                    font-weight: 700;
+                    text-align: left;
+
+                    cursor: pointer;
+
+                    transition:
+                        box-shadow 160ms ease,
+                        text-shadow 160ms ease;
+
+                    &:hover {
+                        box-shadow: 0 8px 22px var(--shadow-color);
+                        text-shadow: 0 0 12px var(--text-soft-color);
+                    }
+
+                    svg {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
             }
         }
 

@@ -199,10 +199,8 @@ export const getAvatarStyle = (styleId) => {
     );
 };
 
-export const getStylePreviewUrl = (styleId, seed = "a2rp") => {
-    return `https://api.dicebear.com/9.x/${styleId}/svg?seed=${encodeURIComponent(
-        seed,
-    )}`;
+export const getStylePreviewUrl = (styleId) => {
+    return `${import.meta.env.BASE_URL}avatar-styles/${styleId}.svg`;
 };
 
 export const loadAvatarStyle = async (styleId) => {

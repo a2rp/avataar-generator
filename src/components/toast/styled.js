@@ -47,7 +47,8 @@ export const Styled = {
             cursor: pointer;
 
             &:hover {
-                background: var(--surface-soft-color);
+                box-shadow: 0 8px 22px var(--shadow-color);
+                text-shadow: 0 0 12px var(--text-soft-color);
             }
         }
 

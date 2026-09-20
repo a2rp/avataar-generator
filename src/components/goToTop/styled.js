@@ -24,16 +24,12 @@ export const Styled = {
         cursor: pointer;
 
         transition:
-            transform 160ms ease,
-            border-color 160ms ease,
-            background 160ms ease;
+            box-shadow 160ms ease,
+            text-shadow 160ms ease;
 
         &:hover {
-            transform: translateY(-2px);
-
-            border-color: var(--border-strong-color);
-
-            background: var(--surface-strong-color);
+            box-shadow: 0 8px 22px var(--shadow-color);
+            text-shadow: 0 0 12px var(--text-soft-color);
         }
 
         svg {

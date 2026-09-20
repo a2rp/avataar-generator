@@ -66,30 +66,38 @@ export const Styled = {
         .support {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px 14px;
+            gap: 8px;
 
             a {
-                display: inline-flex;
-                align-items: center;
-                gap: 5px;
+                width: 32px;
+                height: 32px;
+
+                display: grid;
+                place-items: center;
 
                 color: var(--text-muted-color);
 
-                font-size: 0.58rem;
+                border: 1px solid var(--border-color);
+                border-radius: 8px;
+
+                transition:
+                    box-shadow 160ms ease,
+                    text-shadow 160ms ease;
 
                 &:hover {
-                    color: var(--text-color);
+                    box-shadow: 0 8px 22px var(--shadow-color);
+                    text-shadow: 0 0 12px var(--text-soft-color);
                 }
 
                 svg {
-                    width: 12px;
-                    height: 12px;
+                    width: 14px;
+                    height: 14px;
                 }
             }
         }
 
         .support {
-            max-width: 180px;
+            max-width: 120px;
         }
 
         .bottom {
@@ -112,6 +120,10 @@ export const Styled = {
                 color: var(--text-soft-color);
 
                 font-weight: 700;
+
+                &:hover {
+                    text-shadow: 0 0 12px var(--text-soft-color);
+                }
             }
         }
 
